@@ -1,0 +1,962 @@
+/* Reset básico para margens e padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração para links */
+a {
+    text-decoration: none;
+}
+
+/* Remover marcadores de listas */
+ul, ol, li {
+    list-style: none;
+}
+
+/* Habilitar rolagem suave na página */
+html, body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo básico do header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0174DE;
+    padding: 16px;
+    z-index: 10;
+}
+
+ .barramenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Centralizar os itens no menu */
+    padding: 0;
+
+
+}
+.barramenu img{
+    width: 50px;
+    height: 50px;
+    top: 0;
+}
+
+.barramenu .icons{
+    justify-content: space-between;
+    width: 10%;
+}
+
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    gap: 180px;
+    margin-left: 35vh; /* Adiciona um deslocamento para a esquerda */
+    
+}
+
+header nav a {
+    color: white;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Estilo básico para as seções */
+.grupo {
+    height: 100vh;
+    padding-top: 80px; /* Para dar espaço abaixo do header fixo */
+    position: relative;
+    padding: 20px;
+} 
+
+ Seções específicas com fundo colorido
+#sociologia {
+    background-color: #ffffff;
+}
+#sociologia .barralateral {
+    margin-right: 80%;
+    width: 20%;
+    height: 100%;
+    background-color: #0174DE;
+    position: absolute;
+    display: flex; /* Adiciona flexbox */
+    /* justify-content: center; Centraliza horizontalmente */
+
+}
+
+#sociologia .barralateral img {
+    max-height: 80px; /* Ajusta o tamanho máximo */
+    max-width: 80px; /* Ajusta a largura máxima */
+    margin-top: 3vh; /* Espaçamento superior */
+    position: relative; /* Ajusta o posicionamento em relação ao container pai */
+    margin-left: 3vh; /* Espaçamento à esquerda */
+    z-index: 5; /* Garante que o ícone fique acima de outros elementos */
+}
+
+#sociologia .barralateral h2 {
+max-width: 400px;
+margin-top: 25vh;
+margin-left: 40px;
+
+}
+
+#sociologia .container1{
+
+    margin-top: -40vh;
+    margin-right: 20vh;
+    width: 65%;
+    height: 22%;
+    background: linear-gradient(to top, #a2c7ff, #0174DE);
+    position: absolute;
+    border-radius: 30px;
+
+}
+
+#sociologia .container1 h1{
+    margin-top: -9vh;
+    font-size: 11.5mm;
+    margin-left: 3vh;
+    color: black;
+}
+
+#sociologia .container1 h3{
+    position: absolute;
+    font-size: 7.5mm;
+    margin-left: 3vh;
+    max-width: 90vh;
+    margin-top: 7vh;
+    color: black;
+}
+
+#sociologia .container1 img{
+    width: 30vh;
+    height: 25vh;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: -3vh;
+}
+#sociologia .container2{
+    
+    margin-top: 40vh;
+    margin-right: 20vh;
+    width: 65%;
+    height: 25%;
+    background: linear-gradient(to top, #a2c7ff, #0174DE);
+    position: absolute;
+    border-radius: 30px;
+
+}
+#sociologia .container2 h3{
+    margin-top: 1vh;
+    font-size: 11.5mm;
+    margin-left: 3vh;
+    color: black;
+    max-width: 60vh;
+}
+#sociologia .container2 h4{
+    position: absolute;
+    font-size: 7.5mm;
+    margin-left: 3vh;
+    max-width: 110vh;
+    margin-top: 3vh;
+    color: black;
+}
+#sociologia .container2 img{
+width: 50vh;
+height: 20vh;
+margin-left: 70vh;
+margin-top: -18vh;
+
+
+} 
+
+
+#teoricos {
+    background-color: white /* Verde */
+}
+#teoricos .container1{
+
+    margin-top: -77.9vh;
+    margin-right: 120vh;
+    width: 35%;
+    height: 22%;
+    background-color: #0174DE;
+    position: absolute;
+    border-radius:35px;
+
+
+}
+#teoricos .container1 h1{
+    margin-top: -2vh;
+    margin-left: 13vh;
+    color: rgb(255, 255, 255);
+
+}
+#teoricos .containerteorico1{
+
+    margin-top: -10vh;
+    margin-right: 30vh;
+    width: 80%;
+    height: 35%;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    border-radius: 30px;
+}
+#teoricos .containerteorico2{
+
+    margin-top: 65vh;
+    margin-right: 30vh;
+    width: 80%;
+    height: 35%;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    border-radius: 30px;
+}
+#teoricos .containerteorico1 h1{
+    font-size: 55px;
+    margin-top: 17vh;
+    color: black;
+    margin-left: 3vh;
+    position: absolute;
+
+}
+#teoricos .containerteorico1 h2{
+    font-size: 26px;
+    max-width: 110vh;
+    margin-left: 27vh;
+    margin-top: 5vh;
+}
+#teoricos .containerteorico1 img{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    top: 2vh;
+    border-radius: 30px;
+    margin-left: 2vh;
+    
+}
+#teoricos .containerteorico2 h1{
+    font-size: 40px;
+    margin-top: 18vh;
+    color: black;
+    margin-left: 2vh;
+}
+
+#teoricos .containerteorico2 h2{
+    font-size: 26px;
+    max-width: 130vh;
+    margin-left: 27vh;
+    margin-top: 2vh;
+}
+#teoricos .containerteorico2 img{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    top: 2vh;
+    border-radius: 30px;
+    margin-left: 2vh;
+    
+}
+
+#temas {
+    background-color: rgb(255, 255, 255); /* Azul escuro */
+}
+#temas .barralateraltemas{
+    margin-right: -2vh;
+    width: 15%;
+    height: 100%;
+    background-color: #0174DE;
+    position: absolute;
+    
+
+}
+#temas .containertemas{
+    top: 0;
+    margin-right: 130vh;
+    width: 30%;
+    height: 13%;
+    background-color: #0174DE;
+    position: absolute;
+    border-radius:35px;
+
+}
+#temas .containertemas h1{
+
+    margin-top: -8vh;
+    margin-left: 18vh;
+    color: rgb(255, 255, 255);
+
+}
+
+
+#temas .topicos {
+    font-size: 1.3rem;      /* Aumenta o tamanho do texto */
+    line-height: 3;       /* Aumenta o espaçamento entre as linhas */
+    max-width: 100%;         /* Limita a largura para manter uma boa leitura */
+    color: black;           /* Cor do texto */
+    margin-right:70vh;
+    margin-top: 10vh;
+}
+#temas img{
+    width: 40vh;
+    height: 40vh;
+    position: absolute;
+    margin-left: -8vh;
+    margin-top: 60vh;
+}
+
+
+
+#historia {
+    background-color: rgb(255, 255, 255); /* Amarelo queimado */
+}
+
+#historia .containerH1{
+    top: 0;
+    margin-right: 120vh;
+    width: 35%;
+    height: 15%;
+    background-color: #0174DE;
+    position: absolute;
+    z-index: 1;
+
+}
+#historia .barralateral{
+    margin-right: -2vh;
+    width: 15%;
+    height: 100%;
+    background-color: #0174DE;
+    position: absolute;
+    margin-right: 150vh;
+
+}
+#historia .barralateral .img1{
+    max-width: 25vh;
+    max-height: 15vh;
+    margin-top: 20vh;
+    position: absolute;
+    margin-left: 5vh;
+    display: flex;
+}
+#historia .barralateral .img2{
+    max-width: 25vh;
+    max-height: 15vh;
+    margin-top: 40vh;
+    position: absolute;
+    margin-left: 5vh;
+    display: flex;
+}
+#historia .barralateral .img3{
+    max-width: 20vh;
+    max-height: 15vh;
+    margin-top: 60vh;
+    position: absolute;
+    margin-left: 5vh;
+    display: flex;
+}
+#historia .barralateral .img4{
+    max-width: 30vh;
+    max-height: 15vh;
+    margin-top: 80vh;
+    position: absolute;
+    margin-left: 5vh;
+    display: flex;
+}
+
+
+#historia .containerH1 h1{
+    margin-top: -7vh;
+    margin-left: 20vh;
+    color: rgb(255, 255, 255);
+    font-size: 15.0mm;
+}
+
+#historia .containerH2{
+    margin-right: 180vh;
+    width: 12%;
+    height: 100%;
+    background-color: #0174DE;
+    position: absolute;
+
+  
+
+}
+
+
+#historia .containerH2 .historicos{
+    width: 30px;
+    height: 10px;
+    
+    
+}
+
+#historia .linhatempo img{
+    display: flex;
+    width: 85vh;
+    height: 75vh;
+    justify-content: center;
+    margin-right: 39vh;
+    margin-top: 10vh;      
+     
+}
+
+
+
+
+#importancia {
+    background-color: rgb(255, 255, 255); /* Roxo escuro */
+}
+#importancia .containerimportancia{
+    top: 0;
+    margin-right:120vh;
+    width: 40%;
+    height: 15%;
+    background-color: #0174DE;
+    position: absolute; 
+    border-radius:35px;
+    
+    }
+    
+    #importancia .containerimportancia h1{
+        margin-top: -5vh;
+        margin-left: 20vh;
+        color: rgb(255, 255, 255);
+        letter-spacing: 10px;
+    
+    }
+#importancia .container1 {
+    font-size:5mm ;
+    height: 24vh;      /* Aumenta o espaçamento entre as linhas */
+    width: 100vh;         /* Limita a largura para manter uma boa leitura */
+    color: black;           /* Cor do texto */
+    margin-right: 70vh;
+    margin-top: -15vh;
+    position: absolute;
+    background: linear-gradient(to top, #a2c7ff, #0174DE);
+    border-radius: 35px;
+    
+    
+}
+#importancia .container1 h2{
+    max-width: 90vh;
+    font-size: 7.7mm;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#importancia .container2 {
+ 
+    font-size:5mm ;
+    height: 24vh;      
+    width: 100vh;         
+    color: black;           
+    margin-right: 70vh;
+    margin-top: 55vh;
+    position: absolute;
+    background: linear-gradient(to top, #a2c7ff, #0174DE);
+    border-radius: 35px;
+}
+
+#importancia .container2 h2{
+    max-width: 90vh;
+    font-size: 7.7mm;
+    margin-left: 50px;
+    margin-top: 21px;
+}
+#importancia img{
+    width: 50vh;
+    height: 30vh;
+    position: absolute;
+    margin-right: 10vh;
+
+}
+
+/* Configuração para os textos dentro das seções */
+h1 {
+    position: absolute;
+    top: 12vh;
+    color: white;
+    font-size: 3rem;
+    margin-right: 85vh; /* Espaçamento à direita */
+    
+}
+
+p {
+    position: absolute;
+    left: 10%;
+    color: white;
+    font-size: 2rem;
+    width: 20%;
+}
+
+/* Estilo para as imagens nas seções */
+
+
+/* Flexbox para alinhar imagens e textos */
+#sociologia, #teoricos, #temas, #historia, #importancia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+
+
+@media (max-width: 375px) and (max-height: 667px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0174DE;
+        padding: 20px;
+        z-index: 10;
+        height: 5%;
+    }
+    .barramenu {
+        width: 25%;
+        display: flex;
+        justify-content: space-between; /* Centralizar os itens no menu */
+        padding: 0;
+    
+    
+    }
+    .barramenu img{
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        margin-left: -3vh;
+        margin-top: 2vh;
+    }
+    
+    .barramenu .icons{
+        justify-content: space-between;
+        width: 10%;
+        margin-top: 200vh;
+        position: absolute;
+    }
+    
+    
+    header nav ul {
+        display: flex;
+        width: 80%;
+        gap: 0px;
+        margin-left: 1vh; /* Adiciona um deslocamento para a esquerda */
+        font-size:2.2mm;
+        
+    }
+    
+    header nav a {
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    header nav a:hover {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    /* Estilo básico para as seções */
+    .grupo {
+        height: 100vh;
+        padding-top: 80px; /* Para dar espaço abaixo do header fixo */
+        position: relative;
+        padding: 20px;
+    }
+    
+    #sociologia {
+        background-color: #ffffff;
+    }
+    #sociologia .barralateral img{
+        max-height: 80px;
+        max-width: 80px;
+        margin-top: 3vh;
+        position: absolute;
+        margin-left: 3vh;
+        z-index: 5;
+    }
+    #sociologia .barralateral {
+        display: block; /* Torna a barra lateral visível */
+        position: absolute; /* Ajuste de posição */
+        margin-top: -17vh; /* Posiciona no topo */
+        font-size: 2.5mm;
+        margin-right:  8vh; /* Posiciona na esquerda */
+        width: 80%; /* Ajuste da largura */
+        background-color: #ffffff; /* Adiciona uma cor de fundo para teste */
+    }
+    
+    #sociologia .container1{
+    
+        margin-top: -20vh;
+        margin-right: 5vh;
+        width: 80%;
+        height: 25%;
+        background: linear-gradient(to top, #a2c7ff, #0174DE);
+        position: absolute;
+        border-radius: 30px;
+    
+    }
+    
+    #sociologia .container1 h1{
+        margin-top: -11vh;
+        font-size: 5mm;
+        margin-left: 3vh;
+        color: black;
+    }
+    
+    #sociologia .container1 h3{
+        position: absolute;
+        font-size:3.5mm;
+        margin-left: 3vh;
+        max-width: 90vh;
+        margin-top: 7vh;
+        color: black;
+    }
+    
+    #sociologia .container1 img{
+        width: 25vh;
+        height: 20vh;
+        position: absolute;
+        margin-left: 69%;
+        margin-top: 53vh;
+        z-index: 2;
+    }
+    #sociologia .container2 img{
+        display: none;
+    }
+    #sociologia .container2{
+        margin-top: 50vh;
+        margin-right: 5vh;
+        width: 80%;
+        height: 25%;
+        background: linear-gradient(to top, #a2c7ff, #0174DE);
+        position: absolute;
+        border-radius: 30px;
+    
+    }
+    #sociologia .container2 h3{
+        margin-top: 1vh;
+        font-size: 5mm;
+        margin-left: 3vh;
+        color: black;
+        max-width: 60vh;
+    }
+    #sociologia .container2 h4{
+        position: absolute;
+        font-size: 3.2mm;
+        margin-left: 2vh;
+        max-width: 45vh;
+        margin-top: 2vh;
+        color: black;
+    }
+    #teoricos {
+        background-color: white 
+    }
+    #teoricos .container1{
+    
+        margin-top: -107%;
+        margin-right: 22vh;
+        width: 57%;
+        height: 10VH;
+        background-color: #0174DE;
+        position: absolute;
+        border-radius:8px;
+    
+    
+    }
+    #teoricos .container1 h1{
+        margin-top: -9vh;
+        margin-left: 4vh;
+        color: rgb(255, 255, 255);
+        font-size: 7.5mm;
+    
+    }
+    #teoricos .containerteorico1{
+    
+        margin-top: -6vh;
+        margin-left: 112px; /* Move para a direita */
+        margin-right:-3vh;    /* Ajuste conforme necessário */
+        width: 100%;
+        height: 26%;
+        background-color: #0174DE;
+        position: absolute;
+        border-radius: -37px;
+    }
+    #teoricos .containerteorico2{
+    
+        margin-top: 65vh;
+        width: 100%;
+        height: 26%;
+        background-color: #0174DE;
+        position: absolute;
+        border-radius: 30px;
+        margin-left: 140px; /* Move para a direita */
+        margin-right: -3vh;    /* Ajuste conforme necessário */
+    }
+    /*TEORICOS*/
+    #teoricos .containerteorico1 h1{
+        font-size: 3mm;
+        margin-top: 10vh;
+        max-width: 1450vh;
+        color: black;
+        margin-left: 7vh;
+    
+    }
+    /*TEXTO KALMARCOS*/
+    #teoricos .containerteorico1 h2 {
+        font-size: 2.8mm; /* Texto pequeno */
+        max-width: 150vh; /* Mantém o limite da largura */
+        margin-left: 20vh; /* Posição lateral */
+        margin-top: 10px; /* Move para cima com valor negativo */
+    }
+    
+    #teoricos .containerteorico1 img{
+        position: absolute;
+        width: 100px;
+        height: 140px;
+        top: 1vh;
+        border-radius: 30px;
+        margin-left: 2vh;
+        
+    }
+    #teoricos .containerteorico2 h1{
+        font-size: 3mm;
+        margin-top: 10vh;
+        max-width: 1450vh;
+        color: black;
+        margin-left: 6vh;
+    }
+    
+    #teoricos .containerteorico2 h2{
+        font-size: 2.8mm; /* Texto pequeno */
+        max-width: 150vh; /* Mantém o limite da largura */
+        margin-left: 20vh; /* Posição lateral */
+        margin-top: 1px; /* Move para cima com valor negativo */
+    }
+    #teoricos .containerteorico2 img{
+        position: absolute;
+        width: 100px;
+        height: 140px;
+        top: 1vh;
+        border-radius: 30px;
+        margin-left: 2vh;
+        
+    }
+    
+    #temas {
+        background-color: rgb(255, 255, 255); /* Azul escuro */
+    }
+    #temas .barralateral img{
+        width: 40vh;
+        height: 40vh;
+        position: absolute;
+        margin-left: -40vh;
+        margin-top: 60vh;
+    }
+    #temas .barralateraltemas{
+        display: none;
+    }
+    #temas .containertemas{
+        margin-top: 0vh;
+        width: 50%;
+        height: 10%;
+        background-color: #0174DE;
+        position: absolute;
+        border-radius: 10px;
+        margin-left: 20px; /* Move para a direita */
+        margin-right: 26vh;    /* Ajuste conforme necessário */
+    }
+    #temas .containertemas h1{
+        margin-top: -9vh;
+        margin-left: 20vh;
+        font-size: 5MM;
+        color: rgb(255, 255, 255);
+        margin-left:58px ;
+    }
+
+
+    #temas .topicos {
+        font-size: 2.6mm;      /* Aumenta o tamanho do texto */
+        max-width: 100%;         /* Limita a largura para manter uma boa leitura */
+        color: black;           /* Cor do texto */
+        margin-right:-10vh;
+        margin-top: 0vh;
+    }
+
+        
+    #historia {
+        background-color: rgb(255, 255, 255); /* Amarelo queimado */
+    }
+    
+    #historia .containerH1{
+        top: 2;
+        margin-right: 10vh;
+        width: 455%;
+        height: 15%;
+        background-color: #0174DE;
+        position: absolute;
+        z-index: 1;
+    
+    }
+    #historia .barralateral{
+        margin-right: -2vh;
+        width: 15%;
+        height: 100%;
+        background-color: #0174DE;
+        position: absolute;
+        margin-right: 150vh;
+    
+    }
+    #historia .barralateral .img1{
+        max-width: 25vh;
+        max-height: 18vh;
+        margin-top: 27vh;
+        position: absolute;
+        margin-left: 58vh;
+        display: flex;
+    }
+    #historia .barralateral .img2{
+        position: absolute;
+        width: 100px;
+        height: 140px;
+        top: 1vh;
+        border-radius: 30px;
+        margin-left: 2vh;
+        z-index: 1;
+    }
+    #historia .barralateral .img3{
+        max-width: 20vh;
+        max-height: 15vh;
+        margin-top: 360vh;
+        position: absolute;
+        margin-left: 5vh;
+        display: flex;
+    }
+    #historia .barralateral .img4{
+        position: absolute;
+        width: -140px;
+        height: -150px;
+        top: 1vh;
+        border-radius: 30px;
+        margin-left: -25vh;
+    }
+    #historia .containerH1 h1 {
+        margin-top: 0; /* Altere para ajustar a posição vertical */
+        margin-left: 140vh; /* Altere para ajustar a posição horizontal */
+        color: rgb(0, 0, 0); /* Texto branco */
+        font-size: 18px; /* Tamanho visível */
+        position: absolute; /* Ou 'absolute', dependendo do layout */        
+    }
+    
+    #historia .containerH2{
+        margin-right: 180vh;
+        width: 12%;
+        height: 50%;
+        background-color: #0174DE;
+        position: absolute;
+    
+    }
+    
+    
+    #historia .containerH2 .historicos{
+        width: 30px;
+        height: 10px;
+        
+        
+    }
+    
+    #historia .linhatempo img{
+        display: flex;
+        width: 60vh;
+        height: 60vh;
+        justify-content: center;
+        margin-right: -3vh;
+        margin-top: 29vh;      
+    }   
+    
+    #importancia {
+        background-color: rgb(255, 255, 255); /* Roxo escuro */
+    }
+    #importancia .containerimportancia{
+        margin-top: 0vh;
+        width: 190px;
+        height: 72px;
+        background-color: #0174DE;
+        position: absolute;
+        border-radius: 20px;
+        margin-left: 13vh;
+        margin-right: 31vh; 
+
+    }
+
+    #importancia .containerimportancia h1{
+        margin-top: -8vh;
+        margin-left: 9vh;
+        letter-spacing: -17px;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0;
+        font-size: 4.5mm;
+        z-index: auto;
+
+    }
+
+    #importancia .container1 {
+        margin-top: 19vh;
+        width: 90%;
+        height: 28%;
+        background-color: #0174DE;
+        position: absolute;
+        border-radius: 30px;
+        margin-left: -20vh; /* Move para a direita */
+        margin-right: -1vh;    /* Ajuste conforme necessário */
+        
+    }
+    #importancia .container1 h2{
+        max-width: 90vh;
+        color: black;
+        font-size: 3.5mm;
+        margin-left: 12px;
+        margin-top: 18px;
+    }
+
+    #importancia .container2 {
+        margin-top: -40vh;
+        width: 90%;
+        height: 28%;
+        background-color: #0174DE;
+        position: absolute;
+        border-radius: 30px;
+        margin-right: -1vh;    /* Ajuste conforme necessário */
+    }
+
+    #importancia .container2 h2{
+        width: 35vh;
+        font-size: 3.5mm;
+        color: black;
+        margin-left: 15px;
+        margin-top: 8px;
+        z-index: 1;
+    }
+    #importancia img{
+        width: 35vh;
+        height: 20vh;
+        margin-top: 466px;
+        position: absolute;
+        margin-right: 8vh;
+
+    }
+
+
+}
